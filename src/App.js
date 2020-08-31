@@ -4,18 +4,26 @@ import './App.css';
 import { Provider } from 'react-redux';
 
 import Posts from './components/Posts';
-import PostForm from './components/Postform';
+import AddForm from './components/AddForm';
 
 import store from './store';
 
 class App extends Component {
+  state = {
+    added : true
+  };
+  handleAddPost = () => {
+    this.setState({added: !this.state.added});
+    console.log("haha");
+    // this.state.added = true
+  }
   render() {
     return (
       <Provider store={store}>
         <div className="App">
-          <PostForm />
+         { this.state.added && <AddForm /> }
           <hr />
-          <Posts />
+          <Posts/>
         </div>
       </Provider>
     );

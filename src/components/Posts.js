@@ -21,7 +21,7 @@ class Posts extends Component {
   render() {
     console.log(this.props.message);
     const postItems = this.props.posts.map((post, index) => (
-      <div key={post.id}>
+      <div key={post.id} className="post-card">
         <h3>{post.title}
           <small
            id={post.id} 
@@ -34,7 +34,8 @@ class Posts extends Component {
     ));
     return (
       <div>
-        <h1>Posts</h1>
+        <h1>Posts 
+          </h1>
         {postItems}
       </div>
     );

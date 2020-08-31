@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createPost } from '../actions/postActions';
 
-class PostForm extends Component {
+class AddForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,7 +36,7 @@ class PostForm extends Component {
         <h1>Add Post</h1>
         <form onSubmit={this.onSubmit}>
           <div>
-            <label>Title: </label>
+            <label>Title </label>
             <br />
             <input
               type="text"
@@ -47,7 +47,7 @@ class PostForm extends Component {
           </div>
           <br />
           <div>
-            <label>Body: </label>
+            <label>Body </label>
             <br />
             <textarea
               name="body"
@@ -63,8 +63,8 @@ class PostForm extends Component {
   }
 }
 
-PostForm.propTypes = {
+AddForm.propTypes = {
   createPost: PropTypes.func.isRequired
 };
 
-export default connect(null, { createPost })(PostForm);
+export default connect(null, { createPost })(AddForm);
