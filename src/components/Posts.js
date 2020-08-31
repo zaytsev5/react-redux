@@ -27,7 +27,7 @@ class Posts extends Component {
            id={post.id} 
            style={{marginLeft:'50px'}}
            onClick={this.onDelete.bind(this,post.id)}
-           >delete</small>
+           >delete post </small>
         </h3>
         <p>{post.body}</p>
       </div>

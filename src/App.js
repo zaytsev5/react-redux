@@ -14,7 +14,7 @@ class App extends Component {
   };
   handleAddPost = () => {
     this.setState({added: !this.state.added});
-    console.log("haha");
+    console.log("this is for testing...");
     // this.state.added = true
   }
   render() {
@@ -23,6 +23,12 @@ class App extends Component {
         <div className="App">
          { this.state.added && <AddForm /> }
           <hr />
+          <div
+          onClick={
+            this.handleAddPost.bind(this)
+          }>
+           {this.state.added ? 'minimize' : 'maximize'}
+          </div>
           <Posts/>
         </div>
       </Provider>

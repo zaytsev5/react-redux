@@ -6,18 +6,18 @@ export const fetchPosts = () => dispatch => {
     .then(posts =>
       dispatch({
         type: FETCH_POSTS,
-        payload: posts
+        payload: posts.filter(post => post.id <= 20)
       })
     );
 };
 
-export const createPost = postData => dispatch => {
+export const createPost = newpost => dispatch => {
   fetch('https://jsonplaceholder.typicode.com/posts', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
     },
-    body: JSON.stringify(postData)
+    body: JSON.stringify(newpost)
   })
     .then(res => res.json())
     .then(post =>
