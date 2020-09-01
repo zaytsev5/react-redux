@@ -67,4 +67,5 @@ AddForm.propTypes = {
   createPost: PropTypes.func.isRequired
 };
 
-export default connect(null, { createPost })(AddForm);
+ export default connect(null, { createPost })(AddForm);
+// export default AddForm

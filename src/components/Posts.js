@@ -34,7 +34,7 @@ class Posts extends Component {
     ));
     return (
       <div>
-        <h1>Posts 
+        <h1>Posts fetched
           </h1>
         {postItems}
       </div>

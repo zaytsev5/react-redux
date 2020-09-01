@@ -4,6 +4,6 @@
 
 
 # Serve on localhost:3000
-npm start
+# Visits https://jsonplaceholder.typicode.com for data
 ```
-#
+

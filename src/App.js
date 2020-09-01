@@ -14,21 +14,22 @@ class App extends Component {
   };
   handleAddPost = () => {
     this.setState({added: !this.state.added});
-    console.log("this is for testing...");
+    console.log("you have opened/closed addbox...");
     // this.state.added = true
   }
+
   render() {
     return (
       <Provider store={store}>
         <div className="App">
-         { this.state.added && <AddForm /> }
+          { this.state.added && <AddForm /> }
           <hr />
-          <div
+          <span
           onClick={
             this.handleAddPost.bind(this)
           }>
-           {this.state.added ? 'minimize' : 'maximize'}
-          </div>
+           {this.state.added ? 'here fo close' : 'here for open'}
+          </span>
           <Posts/>
         </div>
       </Provider>
