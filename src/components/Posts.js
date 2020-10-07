@@ -17,7 +17,7 @@ class Posts extends Component {
 
     onDelete = (index) => {
         this.props.delPost(index)
-        console.log("nguyen vanha")
+        // console.log("nguyen vanha")
     }
 
     render() {
