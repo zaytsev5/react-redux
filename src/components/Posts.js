@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {fetchPosts, delPost} from '../actions/postActions';
 
 class Posts extends Component {
-
+    
     componentWillMount() {
         this.props.fetchPosts();
     }
@@ -17,6 +17,7 @@ class Posts extends Component {
 
     onDelete = (index) => {
         this.props.delPost(index)
+        console.log("nguyen vanha")
     }
 
     render() {
