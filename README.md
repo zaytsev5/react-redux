@@ -1,4 +1,4 @@
-# Redux Crash Course
+# Redux Crash Coursefdfdfdf
 
 > Code from the "Redux Crash Course With React" video. Simple implementation of Redux using a couple React components.
 
@@ -11,4 +11,3 @@ npm install
 # Serve on localhost:3000
 npm start
 ```
-# This is a branch of master
