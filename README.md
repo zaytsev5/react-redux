@@ -1,14 +1,9 @@
-# Redux Crash Course
 
-> Code from the "Redux Crash Course With React" video. Simple implementation of Redux using a couple React components.
 
-## Quick Start
+## REACT REDUX
 
-```bash
-# Install dependencies
-npm install
 
 # Serve on localhost:3000
-npm start
+# Visits https://jsonplaceholder.typicode.com for data
 ```
-# This is a branch of master
+
